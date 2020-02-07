@@ -1,27 +1,30 @@
 #include <stdio.h>
 /**
- *main- a program that prints all possible
- *combinations of single-digit numbers.
+ *main- A program that prints all possible
+ *different combinations of two digits.
  * Return: 0
  **/
 int main(void)
 {
-int i;
-int j;
-for (i = 0; i < 10; i++)
+int i = 48, j;
+int k = 49;
+for (i = 48; i <= 56; ++i)
 {
-for (j = i + 1; j < 10; j++)
+j = k;
+for (j = k; j <= 57; ++j)
 {
-putchar(i + '0');
-putchar(j + '0');
-if (i == 8 && j == 9)
+putchar(i);
+putchar(j);
+if (i <= 56 && j <= 57)
 {
-break;
-}
 putchar(',');
 putchar(' ');
 }
 }
+k++;
 putchar('\n');
+}
+putchar('\n');
+
 return (0);
 }
