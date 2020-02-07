@@ -15,16 +15,14 @@ for (j = k; j <= 57; ++j)
 {
 putchar(i);
 putchar(j);
-if (i <= 56 && j <= 57)
+if (!(i == 56 && j == 57))
 {
 putchar(',');
 putchar(' ');
 }
 }
 k++;
-putchar('\n');
 }
 putchar('\n');
-
 return (0);
 }
