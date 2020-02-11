@@ -1,6 +1,8 @@
-#ifndef Parent
-#define Parent
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
 #include <stdio.h>
+
 void positive_or_negative(int i);
-#endif /* Parent */
+
+#endif /* HOLBERTON_H */
