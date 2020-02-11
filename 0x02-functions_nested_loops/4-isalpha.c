@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _islower - A  function that checks for alphabetic character.
+ * _isalpha - A  function that checks for alphabetic character.
  *in lowercase, followed by a new line
  *@c: The character to check whether it is alphabetic.
  * Return: If alpha 1 ,otherwise 0
