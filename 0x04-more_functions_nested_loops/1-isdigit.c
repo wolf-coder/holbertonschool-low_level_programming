@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-*_isdigit -  checks for uppercase character.
-*@c: the character to check whether it is digital or not.
-* Return: 1 if c is digital , 0 otherwise.
-**/
+ *_isdigit - check whether digital.
+ *@c: number input
+ *Return: return 1 if is c digit else 0
+ **/
 int _isdigit(int c)
 {
 if (c >= '0' && c <= '9')
