@@ -7,7 +7,7 @@
 int main(void)
 {
 	unsigned long int n = 612852475143;
-	unsigned long int div = 2, tmp = 0, Factor_max;
+	unsigned long int div = 2, Factor_max;
 
 	while (n != 0)
 	{
@@ -20,7 +20,6 @@ int main(void)
 			if (n == 1)
 			{
 				printf("%lu\n", Factor_max);
-				tmp = 1;
 				break;
 			}
 		}
