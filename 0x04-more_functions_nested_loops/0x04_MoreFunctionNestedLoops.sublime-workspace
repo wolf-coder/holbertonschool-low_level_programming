@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"N",
+				"number"
+			],
+			[
+				"inc",
+				"inc\t#include <…>"
+			],
+			[
 				"h",
 				"h"
 			],
 			[
 				"std",
 				"stdio.h\tstandard header"
-			],
-			[
-				"inc",
-				"inc\t#include <…>"
 			],
 			[
 				"file",
@@ -24,286 +28,258 @@
 	"buffers":
 	[
 		{
-			"file": "0x02-functions_nested_loops/0-holberton.c",
+			"file": "0-isupper.c",
 			"settings":
 			{
-				"buffer_size": 299,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/1-alphabet.c",
-			"settings":
-			{
-				"buffer_size": 251,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/2-print_alphabet_x10.c",
-			"settings":
-			{
-				"buffer_size": 302,
+				"buffer_size": 270,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/3-islower.c",
+			"file": "1-isdigit.c",
 			"settings":
 			{
-				"buffer_size": 323,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/4-isalpha.c",
-			"settings":
-			{
-				"buffer_size": 337,
+				"buffer_size": 206,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/5-sign.c",
+			"file": "2-mul.c",
 			"settings":
 			{
-				"buffer_size": 357,
+				"buffer_size": 212,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/6-abs.c",
+			"file": "3-print_numbers.c",
 			"settings":
 			{
-				"buffer_size": 297,
+				"buffer_size": 185,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/7-print_last_digit.c",
+			"file": "4-print_most_numbers.c",
 			"settings":
 			{
-				"buffer_size": 336,
+				"buffer_size": 255,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/8-24_hours.c",
+			"file": "5-more_numbers.c",
 			"settings":
 			{
-				"buffer_size": 456,
+				"buffer_size": 309,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/9-times_table.c",
+			"file": "6-print_line.c",
 			"settings":
 			{
-				"buffer_size": 498,
+				"buffer_size": 212,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/10-add.c",
+			"file": "7-print_diagonal.c",
 			"settings":
 			{
-				"buffer_size": 253,
+				"buffer_size": 419,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/11-print_to_98.c",
+			"file": "8-print_square.c",
 			"settings":
 			{
-				"buffer_size": 394,
+				"buffer_size": 368,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/100-times_table.c",
+			"file": "9-fizz_buzz.c",
 			"settings":
 			{
-				"buffer_size": 582,
+				"buffer_size": 430,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/101-natural.c",
+			"file": "10-print_triangle.c",
 			"settings":
 			{
-				"buffer_size": 280,
+				"buffer_size": 432,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/102-fibonacci.c",
+			"file": "100-prime_factor.c",
 			"settings":
 			{
-				"buffer_size": 347,
+				"buffer_size": 403,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/103-fibonacci.c",
+			"file": "101-print_number.c",
 			"settings":
 			{
-				"buffer_size": 305,
+				"buffer_size": 344,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/104-fibonacci.c",
+			"file": "holberton.h",
 			"settings":
 			{
-				"buffer_size": 528,
+				"buffer_size": 359,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "#include <stdio.h>\n\n/**\n* main - Fibonacci\n* Return: 0\n*/\nint main(void)\n{\n\tlong int m = 1, k = 2, i = 0;\n\tlong int sum = 0,S=2;\n\t// printf(\"%ld, %ld, \", m, k);\n\tfor (i = 0; i < 26; ++i)\n\t{\n\t\tsum = m + k;\n\t\tif (sum % 2 == 0)\n\t\t{\n\t\t\t\n\t\t}\n\t\t\n\t\tm = k;\n\t\tk = sum;\n\t}\n\tsum = m + k;\n\tif (sum % 2 == 0)\n\t{\n\t\tS= S+sum;\n\t}\n\tprintf(\"%ld\\n\",S );\n\treturn (0);\n}",
-			"file": "0x02-functions_nested_loops/test.c",
-			"file_size": 256,
-			"file_write_time": 132260197524640171,
+			"file": "test.c",
 			"settings":
 			{
-				"buffer_size": 349,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/holberton.h",
-			"settings":
-			{
-				"buffer_size": 361,
+				"buffer_size": 346,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Unix",
+				"name": "int main(){"
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/_putchar.c",
+			"file": "0-main.c",
 			"settings":
 			{
-				"buffer_size": 247,
-				"line_ending": "Unix"
+				"buffer_size": 261,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/1-main.c",
+			"file": "1-main.c",
 			"settings":
 			{
-				"buffer_size": 168,
-				"line_ending": "Unix"
+				"buffer_size": 284,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/2-main.c",
+			"file": "2-main.c",
+			"settings":
+			{
+				"buffer_size": 237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
+			}
+		},
+		{
+			"file": "3-main.c",
+			"settings":
+			{
+				"buffer_size": 167,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
+			}
+		},
+		{
+			"file": "4-main.c",
 			"settings":
 			{
 				"buffer_size": 172,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/3-main.c",
-			"settings":
-			{
-				"buffer_size": 315,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/4-main.c",
-			"settings":
-			{
-				"buffer_size": 362,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/5-main.c",
-			"settings":
-			{
-				"buffer_size": 579,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/6-main.c",
-			"settings":
-			{
-				"buffer_size": 340,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/7-main.c",
-			"settings":
-			{
-				"buffer_size": 285,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/8-main.c",
-			"settings":
-			{
-				"buffer_size": 163,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "0x02-functions_nested_loops/9-main.c",
+			"file": "5-main.c",
 			"settings":
 			{
 				"buffer_size": 166,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/10-main.c",
+			"file": "6-main.c",
 			"settings":
 			{
-				"buffer_size": 220,
+				"buffer_size": 224,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/11-main.c",
+			"file": "7-main.c",
 			"settings":
 			{
-				"buffer_size": 252,
+				"buffer_size": 240,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
 			}
 		},
 		{
-			"file": "0x02-functions_nested_loops/100-main.c",
+			"file": "8-main.c",
 			"settings":
 			{
-				"buffer_size": 314,
+				"buffer_size": 211,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
+			}
+		},
+		{
+			"file": "10-main.c",
+			"settings":
+			{
+				"buffer_size": 239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
+			}
+		},
+		{
+			"file": "101-main.c",
+			"settings":
+			{
+				"buffer_size": 384,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
+			}
+		},
+		{
+			"contents": "###\n###\n###\n\n$\n\n\\.\n.\\\n\n\\..\n.\\.\n..\\\n\n   \\$\n    \\$\n     \\$\n      \\$\n       \\$\n        \\$\n         \\$",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Unix",
+				"name": "###"
 			}
 		}
 	],
@@ -367,7 +343,40 @@
 	},
 	"file_history":
 	[
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0-isupper.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/holberton.h",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/100-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/11-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/10-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/9-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/8-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/7-main.c",
 		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/6-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/5-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/4-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/3-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/2-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/1-main.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/_putchar.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/holberton.h",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/test.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/104-fibonacci.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/103-fibonacci.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/102-fibonacci.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/101-natural.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/100-times_table.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/11-print_to_98.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/10-add.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/9-times_table.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/8-24_hours.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/7-print_last_digit.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/6-abs.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/5-sign.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/4-isalpha.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/3-islower.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/2-print_alphabet_x10.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/1-alphabet.c",
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/0-holberton.c",
 		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/2-alphabet_x10",
 		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x02-functions_nested_loops/3-islower",
 		"/tmp/FA/101-print.c",
@@ -438,6 +447,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"b",
+			"a",
+			"m",
+			"maxFact",
+			"i",
+			"1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz",
+			"n",
+			"##\n",
+			"i",
+			" ",
+			"i",
+			");\n",
 			"%ld",
 			"(\"%",
 			"%ld",
@@ -483,24 +504,24 @@
 	"groups":
 	[
 		{
-			"selected": 17,
+			"selected": 12,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "0x02-functions_nested_loops/0-holberton.c",
+					"file": "0-isupper.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 299,
+						"buffer_size": 270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								270,
+								270
 							]
 						],
 						"settings":
@@ -509,398 +530,82 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "0x02-functions_nested_loops/1-alphabet.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 251,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								175,
-								175
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 29,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "0x02-functions_nested_loops/2-print_alphabet_x10.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								254,
-								254
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 28,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "0x02-functions_nested_loops/3-islower.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 27,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "0x02-functions_nested_loops/4-isalpha.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 337,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								337,
-								337
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 46.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "0x02-functions_nested_loops/5-sign.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								357,
-								357
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 95.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "0x02-functions_nested_loops/6-abs.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 297,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								185,
-								185
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "0x02-functions_nested_loops/7-print_last_digit.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 336,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								336,
-								336
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "0x02-functions_nested_loops/8-24_hours.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 456,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								106,
-								106
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 176.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "0x02-functions_nested_loops/9-times_table.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 498,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								498,
-								498
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 381.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "0x02-functions_nested_loops/10-add.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 253,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "0x02-functions_nested_loops/11-print_to_98.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 394,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								172,
-								172
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "0x02-functions_nested_loops/100-times_table.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 582,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "0x02-functions_nested_loops/101-natural.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 280,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 103.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "0x02-functions_nested_loops/102-fibonacci.c",
+					"buffer": 1,
+					"file": "1-isdigit.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 347,
+						"buffer_size": 206,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								197,
-								197
-							],
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "2-mul.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
 							[
-								204,
-								204
-							],
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "3-print_numbers.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 185,
+						"regions":
+						{
+						},
+						"selection":
+						[
 							[
-								269,
-								269
+								164,
+								164
 							]
 						],
 						"settings":
@@ -915,20 +620,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
-					"file": "0x02-functions_nested_loops/103-fibonacci.c",
+					"buffer": 4,
+					"file": "4-print_most_numbers.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 305,
+						"buffer_size": 255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								204,
-								204
+								255,
+								255
 							]
 						],
 						"settings":
@@ -939,116 +644,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "0x02-functions_nested_loops/104-fibonacci.c",
+					"buffer": 5,
+					"file": "5-more_numbers.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 528,
+						"buffer_size": 309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								236,
-								236
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "0x02-functions_nested_loops/test.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 349,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								232,
-								232
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 18,
-					"file": "0x02-functions_nested_loops/holberton.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 361,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								242,
-								242
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "0x02-functions_nested_loops/_putchar.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 247,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								309,
+								309
 							]
 						],
 						"settings":
@@ -1059,181 +672,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 17,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 11,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 20,
-					"file": "0x02-functions_nested_loops/1-main.c",
+					"buffer": 6,
+					"file": "6-print_line.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 168,
+						"buffer_size": 212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								212,
+								212
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 26,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "0x02-functions_nested_loops/2-main.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 30,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "0x02-functions_nested_loops/3-main.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 315,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 31,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "0x02-functions_nested_loops/4-main.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "0x02-functions_nested_loops/5-main.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 579,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								375,
-								375
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 131.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "0x02-functions_nested_loops/6-main.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 340,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1243,20 +704,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 26,
-					"file": "0x02-functions_nested_loops/7-main.c",
+					"buffer": 7,
+					"file": "7-print_diagonal.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 285,
+						"buffer_size": 419,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								247,
-								247
+								419,
+								419
 							]
 						],
 						"settings":
@@ -1264,19 +725,77 @@
 							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 17.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 27,
-					"file": "0x02-functions_nested_loops/8-main.c",
+					"buffer": 8,
+					"file": "8-print_square.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 163,
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "9-fizz_buzz.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								280,
+								280
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "10-print_triangle.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 432,
 						"regions":
 						{
 						},
@@ -1295,52 +814,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 28,
-					"file": "0x02-functions_nested_loops/9-main.c",
+					"buffer": 11,
+					"file": "100-prime_factor.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 166,
+						"buffer_size": 403,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								144,
-								144
+								208,
+								208
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax"
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 29,
-					"file": "0x02-functions_nested_loops/10-main.c",
+					"buffer": 12,
+					"file": "101-print_number.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 220,
+						"buffer_size": 344,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								118,
-								118
+								244,
+								244
 							]
 						],
 						"settings":
@@ -1348,59 +868,66 @@
 							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 117.0,
+						"translation.y": 137.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 30,
-					"file": "0x02-functions_nested_loops/11-main.c",
+					"buffer": 13,
+					"file": "holberton.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 252,
+						"buffer_size": 359,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								151,
-								151
+								331,
+								331
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
-						"translation.x": 0.0,
-						"translation.y": 128.0,
+						"translation.x": 40.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 31,
-					"file": "0x02-functions_nested_loops/100-main.c",
+					"buffer": 14,
+					"file": "test.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 314,
+						"buffer_size": 346,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								314,
-								314
+								17,
+								17
 							]
 						],
 						"settings":
 						{
+							"auto_name": "int main(){",
 							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
@@ -1413,8 +940,364 @@
 			]
 		},
 		{
+			"selected": 10,
 			"sheets":
 			[
+				{
+					"buffer": 15,
+					"file": "0-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "1-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "2-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "3-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "4-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 34.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "5-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								86,
+								86
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "6-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "7-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "8-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								193,
+								193
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 93.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "10-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 50.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "101-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 122.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 26,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"auto_name": "###",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1458,13 +1341,13 @@
 		"cols":
 		[
 			0.0,
-			0.574553267795,
+			0.790397639789,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.574064174918,
+			0.874686716792,
 			1.0
 		]
 	},
@@ -1477,8 +1360,12 @@
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 108.0
+	},
 	"pinned_build_system": "Packages/C++/C Single File.sublime-build",
-	"project": "0x02-functions_nested_loops.sublime-project",
+	"project": "0x04_MoreFunctionNestedLoops.sublime-project",
 	"replace":
 	{
 		"height": 44.0

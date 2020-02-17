@@ -1,0 +1,759 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inc",
+				"inc\t#include <…>"
+			],
+			[
+				"file",
+				"file_name"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "0x03-debugging/main.c",
+			"settings":
+			{
+				"buffer_size": 219,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "0x03-debugging/0-main.c",
+			"settings":
+			{
+				"buffer_size": 187,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "0x03-debugging/1-main.c",
+			"settings":
+			{
+				"buffer_size": 250,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <stdio.h>"
+			}
+		},
+		{
+			"file": "0x03-debugging/2-main.c",
+			"settings":
+			{
+				"buffer_size": 315,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <stdio.h>"
+			}
+		},
+		{
+			"file": "0x03-debugging/3-main_a.c",
+			"settings":
+			{
+				"buffer_size": 729,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "0x03-debugging/holberton.h",
+			"settings":
+			{
+				"buffer_size": 255,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "0x01-variables_if_else_while/0-positive_or_negative.c",
+			"settings":
+			{
+				"buffer_size": 361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "0x03-debugging/0-positive_or_negative.c",
+			"settings":
+			{
+				"buffer_size": 355,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "0x03-debugging/2-largest_number.c",
+			"settings":
+			{
+				"buffer_size": 406,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
+			}
+		},
+		{
+			"file": "0x03-debugging/3-convert_day.c",
+			"settings":
+			{
+				"buffer_size": 1025,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"holberton.h\""
+			}
+		},
+		{
+			"file": "0x03-debugging/3-print_remaining_days.c",
+			"settings":
+			{
+				"buffer_size": 697,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <stdio.h>"
+			}
+		},
+		{
+			"contents": "#include <stdio.h>\n#include \"holberton.h\"\n/**\n* print_remaining_days - takes a date and prints how many days are\n* left in the year, taking leap years into account\n* @month: month in number format\n* @day: day of month\n* @year: year\n* Return: void\n*/\nvoid print_remaining_days(int month, int day, int year)\n{\nif (year % 4 == 0)\n{\nif (year % 100 == 0)\n{\nif (year % 400 == 0)\n{\nif (month >= 2 && day >= 60)\n{\nday++;\n}\nprintf(\"Day of the year: %d\\n\", day);\nprintf(\"Remaining days: %d\\n\", 366 - day);\n}\n}\nelse\n{\nif (month >= 2 && day >= 60)\n{\nday++;\n}\nprintf(\"Day of the year: %d\\n\", day);\nprintf(\"Remaining days: %d\\n\", 366 - day);\n}\n}\nelse\n{\nif (month == 2 && day == 60)\n{\nprintf(\"Invalid date: %02d/%02d/%04d\\n\", month, day - 31, year);\n}\nelse\n{\nprintf(\"Day of the year: %d\\n\", day);\nprintf(\"Remaining days: %d\\n\", 365 - day);\n}\n}\n}\n",
+			"settings":
+			{
+				"buffer_size": 831,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/cuore/Programming/Holberton/Projects/holbertonschool-low_level_programming/0x03-debugging/3-main.c",
+		"/tmp/untitled.c",
+		"/tmp/FA/101-print.c",
+		"/tmp/FA/untitled.c",
+		"/home/cuore/holberton-system_engineering-devops/0x01-shell_permissions/0-iam_betty",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/11-lists",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/9-firstdirdeletion",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/10-back",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/8-firstdelete",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/7-movethatfile",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/4-listmorefiles",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/1-listit",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/2-bring_me_home",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/3-listfiles",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/5-listfilesdigitonly",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/6-firstdirectory",
+		"/home/cuore/Programming/holberton/0x00.C/main.c",
+		"/home/cuore/Desktop/out.txt",
+		"/tmp/file.txt",
+		"/tmp/FA/tmp",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/17-tree",
+		"/home/cuore/holberton-system_engineering-devops/0x00-shell_basics/0-current_working_directory",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/101-print_comb4.c",
+		"/home/cuore/Programming/holberton/Helpfull_Scripts/test.sh",
+		"/home/cuore/Programming/holberton/Helpfull_Scripts/pushFile.sh",
+		"/home/cuore/holberton-system_engineering-devops/0x02-shell_redirections/7-file",
+		"/home/cuore/holberton-system_engineering-devops/0x02-shell_redirections/pushFile.sh",
+		"/home/cuore/holberton-system_engineering-devops/0x01-shell_permissions/101-man_holberton",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/10-print_comb2.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/9-print_comb.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/8-print_base16.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/7-print_tebahpla.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/6-print_numberz.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/5-print_numbers.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/4-print_alphabt.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/3-print_alphabets.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/2-print_alphabet.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/1-last_digit.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/0-positive_or_negative.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x00-hello_world/101-quote.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x00-hello_world/6-size.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x00-hello_world/5-printf.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x00-hello_world/4-puts.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/102-print_comb5.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x01-variables_if_else_while/100-print_comb3.c",
+		"/home/cuore/Programming/holbertonschool-low_level_programming/0x01-variables_if_else_while/0-positive_or_negative.c",
+		"/home/cuore/holbertonschool-low_level_programming/0x00-hello_world/100-intel",
+		"/home/cuore/Programming/holberton/Helpfull_Scripts/createFile.sh",
+		"/home/cuore/.bashrc",
+		"/tmp/FA/list",
+		"/tmp/FA/script.sh",
+		"/home/cuore/holbertonschool-zero_day/README.md",
+		"/tmp/Hlb/main.c"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"day of ",
+			"y ",
+			">",
+			"> "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "0x03-debugging/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "0x03-debugging/0-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "0x03-debugging/1-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 250,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <stdio.h>",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 312.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "0x03-debugging/2-main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <stdio.h>",
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "0x03-debugging/3-main_a.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 218.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "0x03-debugging/holberton.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "0x01-variables_if_else_while/0-positive_or_negative.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 189.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "0x03-debugging/0-positive_or_negative.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 70.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "0x03-debugging/2-largest_number.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "0x03-debugging/3-convert_day.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"holberton.h\"",
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 362.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 10,
+					"file": "0x03-debugging/3-print_remaining_days.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								504,
+								504
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <stdio.h>",
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								831,
+								831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 425.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.0513874614594,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.0990099009901,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 202.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C Single File.sublime-build",
+	"project": "0x03-debugging.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 3,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
