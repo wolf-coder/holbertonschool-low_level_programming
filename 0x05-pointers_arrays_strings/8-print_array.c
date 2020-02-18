@@ -23,16 +23,3 @@ void print_array(int *a, int n)
 		printf("\n");
 	}
 }
-/**
-* _strlen - function that that returns the length of a string.
-* @s : pointer to a string.
-* Return: string lenght
-*/
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
