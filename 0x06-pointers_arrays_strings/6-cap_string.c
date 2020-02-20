@@ -12,6 +12,10 @@ char *cap_string(char *str)
 	char cap[] = ";.!?\"()\t{}\n ";
 	int len = _strlen(str);
 
+	if (str[i] >= 97 && str[i] <= 122 )
+	{
+		str[i] -= 32;		
+	}
 	for (i = 0; i < len; ++i)
 	{
 		for (j = 0; j <  _strlen(cap); ++j)
