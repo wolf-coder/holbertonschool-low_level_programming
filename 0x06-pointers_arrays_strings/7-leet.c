@@ -9,16 +9,16 @@
 char *leet(char *str)
 {
 	int len = _strlen(str), i, j;
-	char c1[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-	char c2[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	char c1[] = {"aAeEoOtTlL"};
+	char c2[] = {"43071"};
 
 	for (i = 0; i < len; ++i)
 	{
 		for (j = 0; j < 10; ++j)
 		{
-			if (str[i] == c1[j] 	)
+			if (str[i] == c1[j])
 			{
-				str[i] = c2[j];
+				str[i] = c2[j / 2];
 			}
 		}
 	}
