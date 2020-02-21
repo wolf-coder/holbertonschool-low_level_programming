@@ -6,21 +6,22 @@
 *
 *Return: string pointer.
 */
-char *leet(char *str)
+char *leet(char *v)
 {
-	int i, j;
-	char c1[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-	char c2[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	int a = 0, b;
+	char c1[] = {'a', 'e', 'o', 't', 'l'};
+	char c2[] = {'4', '3', '0', '7', '1'};
 
-	for (i = 0; str[i] != '\0'; ++i)
+	while (v[a] != '\0')
 	{
-		for (j = c1[j] != '\0'; ++j)
+		for (b = 0; c1[b] != '\0'; b++)
 		{
-			if (str[i] == c1[j])
+			if (v[a] == c1[b] || v[a] == c1[b] - 32)
 			{
-				str[i] = c2[j];
+				v[a] = c2[b];
 			}
 		}
+		a++;
 	}
-	return (str);
+	return (v);
 }
