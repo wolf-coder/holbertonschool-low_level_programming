@@ -12,9 +12,9 @@ char *leet(char *str)
 	char c1[] = "aAeEoOtTlL";
 	char c2[] = "43071";
 
-	for (i = 0; i < len; ++i)
+	for (i = 0; str[i] != '\0'; ++i)
 	{
-		for (j = 0; j < 10; ++j)
+		for (j = 0; c1[j] != '\0'; ++j)
 		{
 			if (str[i] == c1[j])
 			{
