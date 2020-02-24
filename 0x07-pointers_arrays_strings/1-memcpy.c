@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+
 /**
 *_memcpy -  This function that copies memory area.
 *overwriting the terminating null byte (\0) at the end of dest, and then adds a
