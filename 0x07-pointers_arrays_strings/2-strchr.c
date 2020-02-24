@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stddef.h>
 /**
 *_strchr -  This function that that locates a character in a string.
 *overwriting the terminating null byte (\0) at the end of dest, and then adds a
@@ -24,8 +23,7 @@ char *_strchr(char *s, char c)
 	}
 	if (*p == '\0')
 	{
-		p = NULL;
+		p = 0;
 	}
-	return (NULL);
+	return (0);
 }
-
