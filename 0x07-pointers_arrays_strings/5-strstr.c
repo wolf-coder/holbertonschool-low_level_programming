@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <string.h>
 /**
-*strstr -  This function that locates a substring.
+*_strstr -  This function that locates a substring.
 *
 *@haystack: Pointer to the array.
 *@needle: A ponter to a match string.
