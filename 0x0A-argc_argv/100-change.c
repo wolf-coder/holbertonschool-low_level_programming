@@ -4,7 +4,8 @@
 #include <stdlib.h>
 
 /**
- * main - A program that prints the minimum numberof coins to make change for an amount of money.
+ * main - A program that prints the minimum number
+ *of coins to make change for an amount of money.
  * @argc: The number of command line arguments.
  * @argv: Array containing the program command line arguments.
  * Return: 0 -> Success. 1 :If one of the number contains
