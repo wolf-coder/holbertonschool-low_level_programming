@@ -1,6 +1,6 @@
-#ifndef GRANDPARENT_H
-#define GRANDPARENT_H
+#ifndef OBJECT_LIKE_MACRO
+#define OBJECT_LIKE_MACRO
 
 #define SIZE 1024
 
-#define GRANDPARENT_H
+#endif
