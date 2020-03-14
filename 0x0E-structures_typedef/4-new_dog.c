@@ -18,11 +18,10 @@ char *_strdup(char *str)
 		return (NULL);
 	while (str[len] != '\0')
 		len++;
-	len++;
-	p = malloc(len * sizeof(char));
+	p = malloc((len + 1) * sizeof(char));
 	if (p == NULL)
 		return (NULL);
-	for (i = 0 ; i <= len ; i++)
+	for (i = 0 ; i < len  ; i++)
 		p[i] = str[i];
 	p[i] = '\0';
 	return (p);
@@ -47,11 +46,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 	tmp1 = _strdup(name);
+	if (!tmp1)
+	{
+		free(dog);
+		return (NULL);
+	}
 	tmp2 = _strdup(owner);
-	if (!tmp1 || !tmp2)
+	if (!tmp2)
 	{
 		free(tmp1);
-		free(tmp2);
 		free(dog);
 		return (NULL);
 	}
