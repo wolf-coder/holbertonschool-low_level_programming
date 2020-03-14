@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#define SIZE(x) ((sizeof(x) / sizeof(x[0])))
 
 /**
  * _strdup - function that returns a pointer to a newly allocated space in
