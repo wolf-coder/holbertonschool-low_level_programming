@@ -37,7 +37,7 @@ void print_str(va_list arg)
 		printf("%s", str);
 		return;
 	}
-	printf("%p",str);
+	printf("%p", str);
 }
 /**
 *print_float - Function that display a float.
