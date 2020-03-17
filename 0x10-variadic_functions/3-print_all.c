@@ -33,7 +33,11 @@ void print_str(va_list arg)
 	char *str = va_arg(arg, char *);
 
 	if (str)
+	{
 		printf("%s", str);
+		return;
+	}
+	printf("%p",str);
 }
 /**
 *print_float - Function that display a float.
