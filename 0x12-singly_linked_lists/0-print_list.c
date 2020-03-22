@@ -34,7 +34,7 @@ size_t print_list(const list_t *h)
 		if (h->str == NULL)
 		{
 			i = 0;
-			c = "nil";
+			c = "(nil)";
 		} else
 		{
 			i = _strlen(h->str);
