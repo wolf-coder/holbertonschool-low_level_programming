@@ -23,6 +23,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	*head = New_node;
 	return (*head);
 }
+
 /**
  *listint_len - A function that returns the number of elements in a
  *linked listint_t list.
@@ -68,13 +69,15 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = New_node;
 		return (*head);
 	}
-	if (idx > len - 1)
+	if (idx > len)
 		return (NULL);
 	tmp_node = *head;
 	if (idx == 0)
 	{
 		return (add_nodeint(head, n));
 	}
+	if (idx == len)
+		return (add_nodeint_end(head, n));
 	while (i++ < idx - 1)
 		tmp_node = tmp_node->next;
 	New_node->next = tmp_node->next;
