@@ -62,7 +62,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		pop_listint(head);
-		return (-1);
+		return (1);
 	}
 	if (index == len - 1)
 	{
@@ -70,7 +70,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			Tmp_node = Tmp_node->next;
 		Node_del = Tmp_node->next;
 		Tmp_node->next = NULL;
-		return (-1);
+		return (1);
 	}
 	while (i++ < index - 1)
 		Tmp_node = Tmp_node->next;
