@@ -1,6 +1,7 @@
 #ifndef BIT_MNIPULATION
 #define BIT_MNIPULATION
 
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 int _putchar(char c);
