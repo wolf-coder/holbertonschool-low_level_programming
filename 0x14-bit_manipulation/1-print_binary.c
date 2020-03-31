@@ -9,22 +9,18 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int i = 0, Quotiont = 1, UntilZero = 0, Num, Rest, j;
+	unsigned long int i;
 
-	while (Quotiont != 0)
+	if (n == 0)
 	{
-		UntilZero++;
-		Quotiont = n >> UntilZero;
+		_putchar('0');
+		return;
 	}
-	for (i = UntilZero; i > 0; i--)
+	for (i = n ; i > 0; i = i >> 1)
 	{
-		Num = n;
-		for (j = i; j > 0 ; j--)
-		{
-			Quotiont = Num >> 1;
-			Rest = Num - (Quotiont << 1);
-			Num = Quotiont;
-		}
-		_putchar(Rest + '0');
+		if (n & i)
+			_putchar('1');
+		else
+			_putchar('0');
 	}
 }
