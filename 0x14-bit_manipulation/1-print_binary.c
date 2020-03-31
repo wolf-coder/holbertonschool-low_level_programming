@@ -10,17 +10,24 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int i;
+	int Activated = 0;
 
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	for (i = n ; i > 0; i = i >> 1)
+	for (i = 1UL << 32; i > 0; i = i >> 1)
 	{
 		if (n & i)
+		{
 			_putchar('1');
+			Activated = 1;
+		}
 		else
-			_putchar('0');
+		{
+			if (Activated)
+				_putchar('0');
+		}
 	}
 }
