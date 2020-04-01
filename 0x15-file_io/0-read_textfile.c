@@ -1,4 +1,15 @@
 #include "holberton.h"
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 
 /**
  *read_textfile- A function that reads a text file and prints it
@@ -16,6 +27,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
+	size_t i;
 	off_t size;
 	char *buff = NULL;
 
@@ -26,11 +38,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	size = lseek(fd, 0, SEEK_END);
 	lseek(fd, 0, SEEK_SET);
-	buff = malloc(sizeof(char) * size);
+	buff = malloc(sizeof(char) * letters);
 	if (!buff)
 		return (0);
 	read(fd, buff, letters);
-	dprintf(STDOUT_FILENO, "%s", buff);
-	close(fd);
+	for (i = 0; i < letters; i++)
+		_putchar(buff[i]);
 	return (size);
 }
