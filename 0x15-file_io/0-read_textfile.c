@@ -42,7 +42,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if(readen_bytes == -1)
 		return(0);
 	written_bytes = write(STDOUT_FILENO, buff,readen_bytes);
-	if(readen_bytes == -1)
+	if(written_bytes == -1)
 		return (0);
 	return (written_bytes);
 }
