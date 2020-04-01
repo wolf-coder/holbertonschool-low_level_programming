@@ -28,7 +28,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	size_t i;
-	off_t size;
 	char *buff = NULL;
 
 	if (!filename)
@@ -36,13 +35,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	size = lseek(fd, 0, SEEK_END);
-	lseek(fd, 0, SEEK_SET);
 	buff = malloc(sizeof(char) * letters);
 	if (!buff)
 		return (0);
 	read(fd, buff, letters);
 	for (i = 0; i < letters; i++)
 		_putchar(buff[i]);
-	return (size);
+	return (letters);
 }
