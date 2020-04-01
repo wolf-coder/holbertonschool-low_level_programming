@@ -27,7 +27,7 @@ int _putchar(char c)
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	size_t i;
+	ssize_t written_bytes, readen_bytes;
 	char *buff = NULL;
 
 	if (!filename)
@@ -38,8 +38,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buff = malloc(sizeof(char) * letters);
 	if (!buff)
 		return (0);
-	read(fd, buff, letters);
-	for (i = 0; i < letters; i++)
-		_putchar(buff[i]);
-	return (letters);
+	readen_bytes = read(fd, buff, letters);
+	if(readen_bytes == -1)
+		return(0);
+	written_bytes = write(STDOUT_FILENO, buff,readen_bytes);
+	if(readen_bytes == -1)
+		return (0);
+	return (written_bytes);
 }
