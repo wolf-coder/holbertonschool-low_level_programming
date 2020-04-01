@@ -36,13 +36,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 	buff = malloc(sizeof(char) * letters);
-	if (!buff)
-		return (0);
-	readen_bytes = read(fd, buff, letters);
+    	readen_bytes = read(fd, buff, letters);
 	if(readen_bytes == -1)
 		return(0);
 	written_bytes = write(STDOUT_FILENO, buff,readen_bytes);
 	if(written_bytes == -1)
 		return (0);
+	free(buff);
+	close(fd);
 	return (written_bytes);
 }
