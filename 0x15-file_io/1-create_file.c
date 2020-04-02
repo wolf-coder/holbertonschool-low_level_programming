@@ -16,7 +16,7 @@ int _strlen(char *s)
 /**
  *create_file- Function that creates a file.
  *
- *@filename: The name of the file to create. 
+ *@filename: The name of the file to create.
  *@text_content: A NULL terminated string to write to the file.
  *
  *Return:->1 on success, -1 on failure (file can not be created,
@@ -29,7 +29,7 @@ int create_file(const char *filename, char *text_content)
 	ssize_t wr;
 
 	if (!filename)
-		return(-1);
+		return (-1);
 	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (fd == -1)
 		return (-1);
