@@ -14,8 +14,6 @@ void copy_to_file(const char *file_from, const char *file_to)
 	ssize_t rd, wr;
 	char buff[1024];
 
-	if (!file_from)
-		exit(1);
 	fd = open(file_from, O_RDONLY);
 	if (fd ==  -1)
 	{
