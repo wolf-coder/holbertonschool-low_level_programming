@@ -1,6 +1,20 @@
 #include "holberton.h"
 #define MODE_T_FILE (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
+/**
+ *check_close- A function that check close call success.
+ *
+ *@n: File Descriptor.
+ *Return:Void.
+ */
 
+void check_close(int n)
+{
+	if (n == -1)
+	{
+		dprintf(STDERR_FILENO, "Can't close fd %d\n", n);
+		exit(100);
+	}
+}
 /**
  *copy_to_file- A program that copies the content of a file to another file.
  *
@@ -42,12 +56,9 @@ void copy_to_file(const char *file_from, const char *file_to)
 		}
 	} while (rd == 1024);
 	cl = close(fd);
+	check_close(cl);
 	cl1 = close(fd1);
-	if (cl == -1 || cl1 == -1)
-	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd1);
-		exit(100);
-	}
+	check_close(cl1);
 }
 /**
  *main- Aprogram that copies the content of a file to another file.
