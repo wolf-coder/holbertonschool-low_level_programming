@@ -42,7 +42,7 @@ void copy_to_file(const char *file_from, const char *file_to)
 		}
 	} while (rd == 1024);
 	cl = close(fd);
-	cl1 = close(fd1)
+	cl1 = close(fd1);
 	if (cl == -1 || cl1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd1);
