@@ -35,7 +35,7 @@ void copy_to_file(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd1 = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, MODE_T_FILE);
+	fd1 = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fd1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Can't write to %s\n", file_to);
