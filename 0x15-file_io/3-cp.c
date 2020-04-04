@@ -17,7 +17,7 @@ void copy_to_file(const char *file_from, const char *file_to)
 	fd = open(file_from, O_RDONLY);
 	if (fd ==  -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
 	rd = read(fd, buff, 1024);
