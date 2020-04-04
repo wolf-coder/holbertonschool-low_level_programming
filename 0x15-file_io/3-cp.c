@@ -11,7 +11,7 @@
  */
 void copy_to_file(const char *file_from, const char *file_to)
 {
-	int fd, fd1;
+	int fd, fd1, cl, cl1;
 	ssize_t rd = 0, wr;
 	char buff[1024];
 
@@ -41,12 +41,9 @@ void copy_to_file(const char *file_from, const char *file_to)
 			exit(99);
 		}
 	} while (rd == 1024);
-	if (close(fd) == -1)
-	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd);
-		exit(100);
-	}
-	if (close(fd1) == -1)
+	cl = close(fd);
+	cl1 = close(fd1)
+	if (cl == -1 || cl1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd1);
 		exit(100);
