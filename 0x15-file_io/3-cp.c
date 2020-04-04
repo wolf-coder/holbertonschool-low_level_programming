@@ -11,7 +11,7 @@ void check_close(int n)
 {
 	if (n == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", n);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", n);
 		exit(100);
 	}
 }
@@ -35,10 +35,10 @@ void copy_to_file(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd1 = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	fd1 = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, MODE_T_FILE);
 	if (fd1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't write to %s\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 	do {
@@ -51,7 +51,7 @@ void copy_to_file(const char *file_from, const char *file_to)
 		wr = write(fd1, buff, rd);
 		if (wr ==  -1)
 		{
-			dprintf(STDERR_FILENO, "Can't write to %s\n", file_to);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
 	} while (rd == 1024);
