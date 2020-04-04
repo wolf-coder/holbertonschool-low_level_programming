@@ -1,5 +1,6 @@
 #include "holberton.h"
 #define MODE_T_FILE (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
+
 /**
  *copy_to_file- A program that copies the content of a file to another file.
  *
@@ -10,43 +11,44 @@
  */
 void copy_to_file(const char *file_from, const char *file_to)
 {
-	int fd;
-	ssize_t rd, wr;
+	int fd, fd1;
+	ssize_t rd = 0, wr;
 	char buff[1024];
 
 	fd = open(file_from, O_RDONLY);
 	if (fd ==  -1)
 	{
-		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", file_from);
-		exit(98);
-	}
-	rd = read(fd, buff, 1024);
-	if (rd ==  -1)
-	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
+	fd1 = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, MODE_T_FILE);
+	if (fd1 == -1)
+	{
+		dprintf(STDERR_FILENO, "Can't write to %s\n", file_to);
+		exit(99);
+	}
+	do {
+		rd = read(fd, buff, 1024);
+		if (rd == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+			exit(98);
+		}
+		wr = write(fd1, buff, rd);
+		if (wr ==  -1)
+		{
+			dprintf(STDERR_FILENO, "Can't write to %s\n", file_to);
+			exit(99);
+		}
+	} while (rd == 1024);
 	if (close(fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd);
 		exit(100);
 	}
-
-	fd = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, MODE_T_FILE);
-	if (fd ==  -1)
+	if (close(fd1) == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't write to %s\n", file_to);
-		exit(99);
-	}
-	wr = write(fd, buff, rd);
-	if (wr ==  -1)
-	{
-		dprintf(STDERR_FILENO, "Can't write to %s\n", file_to);
-		exit(99);
-	}
-	if (close(fd) == -1)
-	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd1);
 		exit(100);
 	}
 }
