@@ -60,11 +60,13 @@ void copy_to_file(const char *file_from, const char *file_to)
  */
 int main(int argc, char **argv)
 {
+	int a = 0;
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	copy_to_file(argv[1], argv[2]);
-	return (0);
+	return (a);
 }
