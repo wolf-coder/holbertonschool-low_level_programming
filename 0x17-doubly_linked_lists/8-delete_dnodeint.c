@@ -6,7 +6,7 @@
  *@head:Poiner to the head of linked list.
  *@index:Index number of the elment to be deleted.
  *
- *Return: 1 if it succeeded, -1 if it failed
+ *Return: 1 if it succeeded, -1 if it failed.
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -15,6 +15,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *tmp = NULL;
 
 	tmp = *head;
+	
 	while (tmp)
 	{
 		if (counter == index)
@@ -26,7 +27,11 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 					*head = tmp->next;
 					(*head)->prev = NULL;
 				} else
+			        {
+					free(*head);
 					*head = NULL;
+					return (1);
+				}
 			} else
 			{
 				tmp->prev->next = tmp->next;
