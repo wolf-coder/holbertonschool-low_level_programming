@@ -1,18 +1,20 @@
 CC = gcc
-NAME = holberton
 SRC = main.c holberton.c
-
 OBJ = $(SRC:.c=.o)
-RM = rm -r
+NAME = holberton
+RM = rm
 
-all: $(OBJ)
+all:$(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
 clean:
-	$(RM) *~ $(NAME)
-fclean:
-	$(RM) *~ $(NAME)
-	$(RM) $(OBJ)
+	$(RM) -f *~ $(NAME)
+
 oclean:
-	$(RM) $(OBJ)
+	$(RM) -f $(OBJ)
+
+fclean:
+	$(RM) -f *~ $(NAME)
+	$(RM) -f $(OBJ)
 
 re: oclean all
