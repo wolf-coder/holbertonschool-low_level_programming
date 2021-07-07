@@ -20,7 +20,7 @@ void print_array(int *array, size_t first, size_t last)
 }
 
 /**
- * advanced_binary_search -
+ * advanced_binary_search - In between process
  *
  * @array: First elem pointer
  * @start: first element index
@@ -54,7 +54,7 @@ int advanced_binary_search(int *array, size_t start, size_t end, int value)
 }
 
 /**
- * advanced_binary -
+ * advanced_binary - initial process
  *
  * @array: pointer
  * @size: number of elements
