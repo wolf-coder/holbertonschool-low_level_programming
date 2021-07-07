@@ -53,7 +53,15 @@ int advanced_binary_search(int *array, size_t start, size_t end, int value)
 	return (-1);
 }
 
-
+/**
+ * advanced_binary -
+ *
+ * @array: pointer
+ * @size: number of elements
+ * @value: Searched value
+ *
+ * Return: index of value or (-1) if not exist
+*/
 int advanced_binary(int *array, size_t size, int value)
 {
 	if (size > 0)
